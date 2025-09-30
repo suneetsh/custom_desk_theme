@@ -1,0 +1,150 @@
+/* === GLOBAL RESET === */
+* {
+  font-family: 'Inter','Poppins',sans-serif !important;
+  transition: all 0.25s ease-in-out !important;
+}
+
+/* === BODY === */
+body {
+  background: linear-gradient(135deg, #f8f9fb, #eef2f7, #f8f9fb) fixed !important;
+  color: #1f1f2f !important;
+}
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e, #0f0f1a) fixed !important;
+  color: #f1f1f1 !important;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: linear-gradient(90deg, #6C63FF, #00F0FF) !important;
+  height: 55px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2) !important;
+  border: none !important;
+}
+.navbar .navbar-brand, .navbar .navbar-nav li a {
+  color: #fff !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+/* === SIDEBAR === */
+.app-sidebar {
+  background: rgba(255,255,255,0.5) !important;
+  backdrop-filter: blur(20px) saturate(160%) !important;
+  border-right: 1px solid rgba(0,0,0,0.05) !important;
+}
+[data-theme="dark"] .app-sidebar {
+  background: rgba(20,20,30,0.6) !important;
+  border-right: 1px solid rgba(255,255,255,0.05) !important;
+}
+.app-sidebar .sidebar-link {
+  color: inherit !important;
+  padding: 12px 18px !important;
+  border-radius: 12px !important;
+  margin: 6px 10px !important;
+  font-weight: 500 !important;
+}
+.app-sidebar .sidebar-link:hover {
+  background: rgba(108,99,255,0.15) !important;
+  transform: translateX(6px);
+}
+.app-sidebar .sidebar-link.active {
+  background: linear-gradient(90deg, #6C63FF, #00F0FF) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+}
+
+/* === DESK CARDS === */
+.module-card, .page-card {
+  background: var(--card-bg, #fff) !important;
+  border-radius: 16px !important;
+  padding: 20px !important;
+  box-shadow: 6px 6px 16px rgba(0,0,0,0.1),
+              -4px -4px 12px rgba(255,255,255,0.6) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+[data-theme="dark"] .module-card, [data-theme="dark"] .page-card {
+  background: #1a1a2e !important;
+  box-shadow: 6px 6px 16px rgba(0,0,0,0.5),
+              -4px -4px 12px rgba(255,255,255,0.05) !important;
+}
+.module-card:hover, .page-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25) !important;
+}
+
+/* === FORMS === */
+input, select, textarea {
+  border-radius: 10px !important;
+  padding: 8px 12px !important;
+  border: 1px solid rgba(150,150,150,0.2) !important;
+  outline: none !important;
+}
+input:focus, select:focus, textarea:focus {
+  border: 1px solid #6C63FF !important;
+  box-shadow: 0 0 8px rgba(108,99,255,0.5) !important;
+}
+
+/* === CHECKBOX === */
+input[type="checkbox"] {
+  appearance: none !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid #6C63FF;
+  cursor: pointer;
+  position: relative;
+}
+input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #6C63FF, #00F0FF) !important;
+  border-color: transparent !important;
+}
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  background: linear-gradient(90deg, #6C63FF, #00F0FF) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 10px 18px !important;
+  font-weight: 600 !important;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* === TABLES === */
+table, .data-table, .list-table {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+table th {
+  background: linear-gradient(90deg, #6C63FF, #00F0FF) !important;
+  color: #fff !important;
+  padding: 10px !important;
+}
+table td {
+  padding: 10px !important;
+  border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+}
+
+/* === LOGIN PAGE === */
+.web-login {
+  background: linear-gradient(135deg, #6C63FF, #00F0FF) !important;
+  color: #fff !important;
+}
+.web-login .page-card {
+  background: rgba(255,255,255,0.1) !important;
+  backdrop-filter: blur(16px) !important;
+  border-radius: 16px !important;
+}
+
